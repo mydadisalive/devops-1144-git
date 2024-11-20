@@ -50,8 +50,8 @@ class Library:
     return sorted_books[-1]
 
 
-# MAIN
-if __name__ == "__main__":
+  
+def main():
   library = Library("Sela1144 Library")
   b1 = Book("Python 101", "John Doe", 3)
   b2 = Book("Data Science Handbook", "Jane Smith", 5)
@@ -73,4 +73,7 @@ if __name__ == "__main__":
   popular_book = library.most_popular_book_using_sort()
   print(f"The most popular book is {popular_book.title} by {popular_book.author}")
   
-  print(__name__)
+
+# MAIN
+if __name__ == "__main__":
+  main()
